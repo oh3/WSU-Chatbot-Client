@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">우송이</string>
+
+    <string-array name="header_title">
+        <item></item>
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+    </string-array>
+
+    <!-- 이름을 정의하여 조건에 따라 페이지의 이름을 띄운다.  -->
+    <string name="next">다음</string>
+    <string name="skip">건너뛰기</string>
+    <string name="start">시작</string>
+
+
+</resources>

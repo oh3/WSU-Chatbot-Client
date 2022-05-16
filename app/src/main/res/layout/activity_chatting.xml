@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChattingActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:fastScrollEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/editMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:stackFromEnd="true"
+        tools:itemCount="2" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:tint="#022FA3"
+        app:backgroundTint="#DAF4FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202"
+        app:srcCompat="@android:drawable/ic_dialog_info"/>
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:padding="10dp"
+        app:tint="#72DEFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editMessage"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:ems="13"
+        android:hint="질문을 입력하세요."
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSend"
+        app:layout_constraintStart_toEndOf="@+id/speak"
+        app:layout_constraintTop_toTopOf="@+id/speak" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/speak"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:tint="#72DEFF"
+        app:backgroundTint="#C2ECFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_btn_speak_now" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

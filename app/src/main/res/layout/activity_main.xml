@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimeTableActivity">
+
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save_btn"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"/>
+
+        <Button
+            android:id="@+id/load_btn"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="불러오기" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:background="@drawable/plus_3"
+            android:layout_margin="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:background="@drawable/trash_update"
+            android:layout_margin="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+    </LinearLayout>
+
+    <com.github.tlaabs.timetableview.TimetableView
+        android:id="@+id/timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:header_title="@array/header_title" />
+
+</LinearLayout>

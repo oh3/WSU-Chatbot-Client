@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--    하단 점이 들어갈 레이아웃-->
+    <!--    layout_alignParent로 아래에 위치-->
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <!--    다음 버튼-->
+    <!--    layout_alignParent로 아래 오른쪽에 위치-->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFEB3B"
+        android:text="@string/next"
+        android:textColor="@color/white" />
+
+    <!--    스킵 버튼-->
+    <!--    layout_alignParent로 아래 왼쪽에 위치-->
+    <Button
+        android:layout_gravity="right"
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFEB3B"
+        android:text="@string/skip"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
